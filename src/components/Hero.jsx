@@ -3,7 +3,7 @@ const Hero = () => {
     <sectioon
       className="hero section"
       id="home"
-      style={{ backgroundImage: `url(./media/coffee_image1.webp)` }}
+      style={{ backgroundImage: `url(./media/bg-hero.jpg)` }}
     >
       <h1 className="hero_title">
         start your day <br />

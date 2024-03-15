@@ -1,7 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Special from "./components/special";
+import Products from "./components/Products";
+import Special from "./components/Special";
 import "./index.css";
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main className="main">
         <Hero />
         <Special />
+        <Products />
       </main>
     </>
   );

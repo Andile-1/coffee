@@ -1,4 +1,6 @@
 import React from "react";
+import data from `../json/data.json`;
+
 
 const Products = () => {
   return (
@@ -31,7 +33,7 @@ const Products = () => {
           <article className="products__card main-menu">
             <div className="products__shape">
               <img
-                src="./assets/media/main-menu1.jpg"
+                src="./media/main-menu1.jpg"
                 alt=""
                 className="products__img"
               />
@@ -48,7 +50,7 @@ const Products = () => {
           <article className="products__card main-menu">
             <div className="products__shape">
               <img
-                src="./assets/media/main-menu2.jpg"
+                src="./media/main-menu2.jpg"
                 alt=""
                 className="products__img"
               />
@@ -65,7 +67,7 @@ const Products = () => {
           <article className="products__card main-menu">
             <div className="products__shape">
               <img
-                src="./assets/media/main-menu3.jpg"
+                src="./media/main-menu3.jpg"
                 alt=""
                 className="products__img"
               />
@@ -82,7 +84,7 @@ const Products = () => {
           <article className="products__card main-menu">
             <div className="products__shape">
               <img
-                src="./assets/media/main-menu4.jpg"
+                src="./media/main-menu4.jpg"
                 alt=""
                 className="products__img"
               />
@@ -99,11 +101,7 @@ const Products = () => {
 
           <article className="products__card coffee">
             <div className="products__shape">
-              <img
-                src="./assets/media/coffee.jpg"
-                alt=""
-                className="products__img"
-              />
+              <img src="./media/coffee.jpg" alt="" className="products__img" />
             </div>
             <div className="products__data">
               <h2 className="products__price">$7</h2>
@@ -116,11 +114,7 @@ const Products = () => {
           </article>
           <article className="products__card coffee">
             <div className="products__shape">
-              <img
-                src="./assets/media/coffee2.jpg"
-                alt=""
-                className="products__img"
-              />
+              <img src="./media/coffee2.jpg" alt="" className="products__img" />
             </div>
             <div className="products__data">
               <h2 className="products__price">$12</h2>
@@ -133,11 +127,7 @@ const Products = () => {
           </article>
           <article className="products__card coffee">
             <div className="products__shape">
-              <img
-                src="./assets/media/coffee3.jpg"
-                alt=""
-                className="products__img"
-              />
+              <img src="./media/coffee3.jpg" alt="" className="products__img" />
             </div>
             <div className="products__data">
               <h2 className="products__price">$9</h2>
@@ -152,7 +142,7 @@ const Products = () => {
           <article className="products__card dessert">
             <div className="products__shape">
               <img
-                src="./assets/media/dessert1.jpg"
+                src="./media/dessert1.jpg"
                 alt=""
                 className="products__img"
               />
@@ -169,7 +159,7 @@ const Products = () => {
           <article className="products__card dessert">
             <div className="products__shape">
               <img
-                src="./assets/media/dessert2.jpg"
+                src="./media/dessert2.jpg"
                 alt=""
                 className="products__img"
               />
@@ -186,7 +176,7 @@ const Products = () => {
           <article className="products__card dessert">
             <div className="products__shape">
               <img
-                src="./assets/media/dessert3.jpg"
+                src="./media/dessert3.jpg"
                 alt=""
                 className="products__img"
               />
@@ -203,7 +193,7 @@ const Products = () => {
           <article className="products__card dessert">
             <div className="products__shape">
               <img
-                src="./assets/media/dessert4.jpg"
+                src="./media/dessert4.jpg"
                 alt=""
                 className="products__img"
               />

@@ -1,4 +1,10 @@
 const Hero = () => {
+  const orderNow = () => {
+    window.scrollTo({
+      top: 1150,
+      behavior: "smooth",
+    });
+  };
   return (
     <sectioon
       className="hero section"
@@ -10,7 +16,9 @@ const Hero = () => {
         with your favorite coffee <br />
         and cozy place.
       </h1>
-      <button className="hero_button">Order Now</button>
+      <button className="hero_button" onClick={orderNow}>
+        Order Now
+      </button>
     </sectioon>
   );
 };

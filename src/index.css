@@ -1,8 +1,11 @@
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
+  /*========== Colors ==========*/
   --first-color: hsl(0, 88%, 62%);
   --first-color-alt: hsl(0, 72%, 58%);
   --black-color: hsl(206, 12%, 12%);
@@ -13,6 +16,7 @@
   --body-color: hsl(206, 4%, 97%);
   --container-color: #fff;
 
+  /*========== Font and typography ==========*/
   --body-font: "Lato", sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -33,6 +37,7 @@
   }
 }
 
+/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -54,7 +59,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--container-color);
+  color: var(--title-color);
   font-weight: var(--font-bold);
 }
 
@@ -77,23 +82,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-.hero_title {
-  text-align: center;
-}
 
-.hero_button {
+button {
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: var(--first-color);
-  color: #fff;
-  font-size: 1.5rem;
-  border-radius: 4px;
-}
-.hero__button:hover {
-  color: blueviolet;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
 .d-none {
   display: none;
 }
@@ -167,6 +163,7 @@ img {
   cursor: pointer;
 }
 
+/* change header background */
 .scroll-header {
   background-color: hsla(206, 12%, 12%, 0.9);
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
@@ -207,7 +204,7 @@ img {
 }
 
 .nav__link:hover {
-  color: blueviolet;
+  color: #fff;
 }
 
 .nav__close {
@@ -224,6 +221,7 @@ img {
   right: 0;
 }
 
+/* hero style */
 .hero {
   height: 100vh;
   background-size: cover;
@@ -248,7 +246,7 @@ img {
 }
 
 .hero__title,
-.Hero__button {
+.hero__button {
   z-index: 99;
 }
 
@@ -272,6 +270,7 @@ img {
 .hero__button:hover {
   background-color: var(--first-color-alt);
 }
+/* end */
 
 /* special style */
 .special__category {

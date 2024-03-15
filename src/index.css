@@ -1,11 +1,8 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
   --first-color: hsl(0, 88%, 62%);
   --first-color-alt: hsl(0, 72%, 58%);
   --black-color: hsl(206, 12%, 12%);
@@ -16,7 +13,6 @@
   --body-color: hsl(206, 4%, 97%);
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
   --body-font: "Lato", sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -37,7 +33,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -89,7 +84,6 @@ button {
   cursor: pointer;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .d-none {
   display: none;
 }
@@ -163,7 +157,6 @@ button {
   cursor: pointer;
 }
 
-/* change header background */
 .scroll-header {
   background-color: hsla(206, 12%, 12%, 0.9);
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
@@ -216,12 +209,10 @@ button {
   cursor: pointer;
 }
 
-/* Show menu */
 .show-menu {
   right: 0;
 }
 
-/* hero style */
 .hero {
   height: 100vh;
   background-size: cover;
@@ -270,9 +261,7 @@ button {
 .hero__button:hover {
   background-color: var(--first-color-alt);
 }
-/* end */
 
-/* special style */
 .special__category {
   margin-top: 4rem;
   display: grid;
@@ -296,9 +285,7 @@ button {
   margin-bottom: 0.25rem;
   font-weight: 700;
 }
-/* end */
 
-/* products style */
 .products__filters {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -365,9 +352,7 @@ button {
   background-color: var(--first-color);
   color: #fff;
 }
-/* end */
 
-/* place style */
 .place {
   background-color: #fff;
 }
@@ -423,9 +408,7 @@ button {
 .place__description {
   margin-bottom: 2.5rem;
 }
-/* end */
 
-/* blog */
 .blog__container {
   padding-bottom: 2rem;
 }
@@ -503,9 +486,7 @@ button {
 .blog__reaction span {
   font-size: var(--small-font-size);
 }
-/* end */
 
-/* footer style */
 .footer {
   background-color: var(--black-color);
   padding: 4rem 0 2.5rem;
@@ -606,10 +587,7 @@ button {
 .footer__copy {
   font-size: var(--small-font-size);
 }
-/* end */
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 320px) {
   .container {
     margin-inline: 1rem;
@@ -620,7 +598,6 @@ button {
   }
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px) {
   .special__category {
     grid-template-columns: repeat(2, 200px);
@@ -641,7 +618,7 @@ button {
     width: 350px;
   }
 }
-/* For large devices */
+
 @media screen and (min-width: 769px) {
   .section {
     padding: 7rem 0 2rem;
@@ -727,7 +704,6 @@ button {
   }
 
   .place__img-smalls {
-    /* width: 153px; */
     right: -35px;
   }
 

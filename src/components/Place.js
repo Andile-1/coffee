@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
+import data from "../json/data.json";
 
 const Place = () => {
+  const [selectedImage, setSelectedImage] = useState(data.places[0].imageUrl);
   return (
     <section className="place section" id="place">
       <div className="place__container container">
@@ -11,27 +14,21 @@ const Place = () => {
 
         <div className="place__content grid">
           <div className="place__images">
-            <img
-              src="./assets/media/place1.jpg"
-              alt=""
-              className="place__img-big"
-            />
+            <img src={selectedImage} alt="" className="place__img-big" />
             <div className="place__img-smalls">
-              <img
-                src="./assets/media/place1.jpg"
-                alt=""
-                className="place__img-small active"
-              />
-              <img
-                src="./assets/media/place2.jpg"
-                alt=""
-                className="place__img-small"
-              />
-              <img
-                src="./assets/media/place3.jpg"
-                alt=""
-                className="place__img-small"
-              />
+              {data.places.map((place, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={place.imageUrl}
+                    alt=""
+                    onClick={() => setSelectedImage(place.imageUrl)}
+                    className={`place__img-small ${
+                      selectedImage === place.imageUrl && `active`
+                    }`}
+                  />
+                );
+              })}
             </div>
           </div>
 

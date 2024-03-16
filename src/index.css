@@ -54,8 +54,14 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  color: var(--black-color);
   font-weight: var(--font-bold);
+}
+h4 {
+  color: var(--container-color);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 h1,
@@ -197,7 +203,7 @@ button {
 }
 
 .nav__link:hover {
-  color: #fff;
+  color: blueviolet;
 }
 
 .nav__close {
@@ -243,22 +249,23 @@ button {
 
 .hero__title {
   text-align: center;
-  color: #fff;
+  color: var(--container-color);
   font-size: var(--h1-font-size);
   z-index: 99;
   margin-bottom: 2rem;
 }
 
-.hero__button {
+.hero_button {
   background-color: var(--first-color);
+  color: #fff;
   padding: 1rem 1.75rem;
   border-radius: 0.25rem;
-  color: #fff;
   text-transform: uppercase;
-  transition: 0.3s;
+  transform: 0.3s;
+  cursor: pointer;
 }
 
-.hero__button:hover {
+.hero_button:hover {
   background-color: var(--first-color-alt);
 }
 

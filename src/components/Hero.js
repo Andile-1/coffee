@@ -13,11 +13,12 @@ const Hero = () => {
       style={{ backgroundImage: `url(./media/bg-hero.jpg)` }}
     >
       <Fade top>
-        <h1 className="hero_title">
+        <h4 className="hero_title">
           start your day <br />
           with your favorite coffee <br />
           and cozy place.
-        </h1>
+        </h4>
+
         <button className="hero_button" onClick={orderNow}>
           Order Now
         </button>

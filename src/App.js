@@ -5,7 +5,9 @@ import Products from "./components/Products";
 import Special from "./components/Special";
 import Place from "./components/Place";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 import "./index.css";
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
         <Place />
         <Blog />
       </main>
+      <Footer />
     </>
   );
 }

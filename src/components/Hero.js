@@ -1,3 +1,4 @@
+import { Fade } from "react-reveal";
 const Hero = () => {
   const orderNow = () => {
     window.scrollTo({
@@ -6,20 +7,22 @@ const Hero = () => {
     });
   };
   return (
-    <sectioon
+    <section
       className="hero section"
       id="home"
       style={{ backgroundImage: `url(./media/bg-hero.jpg)` }}
     >
-      <h1 className="hero_title">
-        start your day <br />
-        with your favorite coffee <br />
-        and cozy place.
-      </h1>
-      <button className="hero_button" onClick={orderNow}>
-        Order Now
-      </button>
-    </sectioon>
+      <Fade top>
+        <h1 className="hero_title">
+          start your day <br />
+          with your favorite coffee <br />
+          and cozy place.
+        </h1>
+        <button className="hero_button" onClick={orderNow}>
+          Order Now
+        </button>
+      </Fade>
+    </section>
   );
 };
 export default Hero;

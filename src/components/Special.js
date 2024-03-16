@@ -1,14 +1,16 @@
 import React from "react";
-
-const special = () => {
+import { Fade } from "react-reveal";
+const Special = () => {
   return (
     <div className="special section container" id="special">
       <div className="special__container">
         <div className="special__box">
-          <h2 className="section__title">
-            Best coffees that make you <br />
-            happy and cheer you up!
-          </h2>
+          <Fade left delay={500}>
+            <h2 className="section__title">
+              Best coffees that make you <br />
+              happy and cheer you up!
+            </h2>
+          </Fade>
         </div>
 
         <div className="special__category">
@@ -57,4 +59,4 @@ const special = () => {
   );
 };
 
-export default special;
+export default Special;
